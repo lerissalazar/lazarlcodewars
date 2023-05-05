@@ -3,7 +3,6 @@ import '../component/randomcomponent.css'
 import { Button, Row, Container } from "react-bootstrap";
 import Dropdown from 'react-bootstrap/Dropdown';
 
-
 export default function RandomComponent() {
     return (
         <Container className='randomContainer'>
@@ -46,12 +45,12 @@ export default function RandomComponent() {
                     </Dropdown.Menu>
                 </Dropdown>
                 <p className='lanuageTitle'>Languages</p>
-                <Dropdown>
+                <Dropdown className='dropdown'>
                     <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownBox'>
                     Choose a language
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu className='dropdownMenu'>
+                    <Dropdown.Menu className='dropdownMenuLang'>
                         <Dropdown.Item className='dropdownItem' href="#/action-1">C#</Dropdown.Item>
                         <Dropdown.Item className='dropdownItem' href="#/action-2">JavaScript</Dropdown.Item>
                         <Dropdown.Item className='dropdownItem' href="#/action-3">Python</Dropdown.Item>
@@ -65,7 +64,7 @@ export default function RandomComponent() {
                         Dropdown Button
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu className='dropdownMenu'>
+                    <Dropdown.Menu className='dropdownMenuKyu'>
                         <Dropdown.Item className='dropdownItem' href="#/action-1">8 Kyu</Dropdown.Item>
                         <Dropdown.Item className='dropdownItem' href="#/action-2">6 Kyu</Dropdown.Item>
                         <Dropdown.Item className='dropdownItem' href="#/action-3">4 Kyu</Dropdown.Item>
