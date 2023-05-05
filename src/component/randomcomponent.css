@@ -23,16 +23,12 @@
 }
 
 .randomFirstRow {
-    width: 21rem;
-    height: 15rem;
-}
-
-.randomFirstCol {
     height: 15rem;
     border-right: solid 4px #AC9156;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-right: 2rem;
 }
 
 .languageBtn {
@@ -60,20 +56,40 @@
     font-size: 12px;
 }
 
-.randomKataRow {
-    display: flex;
-    width: 50rem;
-    margin-bottom: 10rem;
+.kyuNum {
+    margin-left: 2rem !important;
+    width: 7rem;
+    margin: 0%;
+    font-size: 32px;
 }
 
-.kyuNum {
-    margin-left: 1.5rem;
-    font-size: 32px;
-    font-weight: bold;
+.kyuCol {
+    display: flex;
+    align-items: center;
+}
+
+.kataDiv {
+    margin-left: 9rem;
+    width: 40rem;
+}
+
+.descriptionTitle {
+    font-size: 24px;
+    margin: 0%;
+}
+
+.descTitle {
+    margin: 0%;
+    font-size: 24px;
+}
+
+.authorTitle {
+    font-size: 16px;
+    margin: 0%;
+    margin-bottom: 0.5rem !important;
 }
 
 .randomKata {
     font-size: 24px;
-    margin-top: 2.5rem;
-    margin-left: 2rem;
+    margin: 0%;
 }
