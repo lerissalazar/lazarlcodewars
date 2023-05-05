@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import '../component/randomcomponent.css'
-import { Button, Row, Col, Container } from "react-bootstrap";
+import { Button, Row, Container } from "react-bootstrap";
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 export default function RandomComponent() {
     return (
@@ -10,21 +13,6 @@ export default function RandomComponent() {
                     <Button className='languageBtn'>Choose a language</Button>
                     <Button className='reserveBtn'>Reserve Kata</Button>
                 </Row>
-                {/* <div className='randomKataCard'>
-                    <Row className='randomKataRow'>
-                        <Col md={2}>
-                            <p className='kyuNum'>7 Kyu</p>
-                        </Col>
-                        <Col md={2}>
-                            <div className='kataDiv'>
-                                <p className='randomKata'>Randomly Chosen Kata</p>
-                                <p className='authorTitle'>Author of this Kata</p>
-                                <p className='descriptionTitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod id earum assumenda quia architecto, quo quis vero, provident cumque optio error consequatur illo qui placeat pariatur ducimus dolor repellat. Aliquid!</p>
-
-                            </div>
-                        </Col>
-                    </Row>
-                </div> */}
                 <Row className='randomKataRow'>
                     <div className='kyuCol'>
                         <p className='kyuNum'>7 Kyu</p>
@@ -39,6 +27,54 @@ export default function RandomComponent() {
                     </div>
                 </Row>
             </div>
+
+            {/* SearchCommponent */}
+
+            <div className='searchComponent'>
+                <p className='filterTitle'>Filters</p>
+                <input className='inputBox'></input>
+                <p className='sortTitle'>Sort By</p>
+                <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownBox'>
+                    Alphabetically
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu className='dropdownMenu'>
+                        <Dropdown.Item className='dropdownItem' href="#/action-1">A-Z</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-2">Z-A</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-3">More</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <p className='lanuageTitle'>Languages</p>
+                <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownBox'>
+                    Choose a language
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu className='dropdownMenu'>
+                        <Dropdown.Item className='dropdownItem' href="#/action-1">C#</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-2">JavaScript</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-3">Python</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-4">Ruby</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-5">Typescript</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <p className='diffTitle'>Difficulty</p>
+                <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownBox'>
+                        Dropdown Button
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu className='dropdownMenu'>
+                        <Dropdown.Item className='dropdownItem' href="#/action-1">8 Kyu</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-2">6 Kyu</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-3">4 Kyu</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-4">2 Kyu</Dropdown.Item>
+                        <Dropdown.Item className='dropdownItem' href="#/action-5">1 Kyu</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+            </div>
+
 
         </Container >
     );

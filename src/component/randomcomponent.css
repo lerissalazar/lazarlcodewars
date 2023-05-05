@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .randomCard {
     background-image: linear-gradient( #292A2D, #222327);
     height: 15rem;
@@ -93,3 +97,69 @@
     font-size: 24px;
     margin: 0%;
 }
+
+/* SearchComponent */
+
+.filterTitle {
+    margin-right: 17rem;
+    font-size: 32px;
+    color: white;
+}
+
+.searchComponent {
+    margin-top: 10rem;
+    width: 407px;
+    height: 509px;
+    background-color: #16171B;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.inputBox {
+    width: 351px;
+    height: 43px;
+    background-color: #222327;
+    border-radius: 4px;
+    border: 2px solid white;
+    font-size: 25px;
+}
+
+.sortTitle {
+    margin-right: 18rem;
+    font-size: 20px;
+    color: white;
+}
+
+.dropdownBox {
+    width: 351px;
+    height: 43px;
+    background-color: #222327;
+    border-radius: 4px;
+    border: 2px solid white;
+    font-size: 12px;
+    color: white;
+}
+
+.lanuageTitle {
+    margin-right: 16rem;
+    font-size: 20px;
+    color: white;
+}
+
+.diffTitle {
+    margin-right: 17rem;
+    font-size: 20px;
+    color: white;
+}
+
+.dropdownItem {
+    color: white;
+    text-decoration: none;
+}
+
+.placeHolder {
+    text-align: left !important;
+}
+
+
